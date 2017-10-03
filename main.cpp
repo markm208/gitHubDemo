@@ -7,7 +7,14 @@ int main()
     return 0;
 }
 //--
-void square(int num)
+void power(int base, int exp)
 {
-    cout<<(num * num)<<endl;
+    int result = 1;
+
+    for(int i = 0;i < exp;i++)
+    {
+        result = result * base;
+    }
+
+    cout<<base<<endl;
 }
