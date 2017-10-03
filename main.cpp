@@ -2,8 +2,14 @@
 
 using namespace std;
 
+void power(int base, int exp);
+
 int main()
 {
+    power(2, 3);
+    power(2, 10);
+    power(2, 20);
+
     return 0;
 }
 //--
@@ -16,5 +22,5 @@ void power(int base, int exp)
         result = result * base;
     }
 
-    cout<<base<<endl;
+    cout<<result<<endl;
 }
