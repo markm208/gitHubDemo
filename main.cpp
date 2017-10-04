@@ -2,18 +2,19 @@
 
 using namespace std;
 
-void power(float base, int exp);
+float power(float base, int exp);
 
 int main()
 {
-    power(2.5, 3);
-    power(2.5, 10);
-    power(2.5, 20);
+    cout<<fixed;
+    cout<<power(2.5, 3)<<endl;
+    cout<<power(2.5, 10)<<endl;
+    cout<<power(2.5, 20)<<endl;
 
     return 0;
 }
 //--
-void power(float base, int exp)
+float power(float base, int exp)
 {
     float result = 1.0;
 
@@ -22,5 +23,5 @@ void power(float base, int exp)
         result = result * base;
     }
 
-    cout<<fixed<<result<<endl;
+    return result;
 }
